@@ -11,9 +11,9 @@ export const getUsuarioById = async (id: number): Promise<Usuario> => {
   return response.data;
 };
 
-export const createUsuario = async (usuario: Usuario): Promise<void> => {
+export const createUsuario = async (usuario: Usuario): Promise<{ id: number }> => {
   const response = await api.post('/usuarios', usuario);
-  return response.data;
+  return response.data; 
 };
 
 export const updateUsuario = async (id: number, usuario: Usuario): Promise<void> => {
