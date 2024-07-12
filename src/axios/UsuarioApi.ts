@@ -31,14 +31,14 @@ export const restoreUsuario = async (id: number): Promise<void> => {
   return response.data;
 };
 export const login = async (usuarioLogin: UsuarioLogin): Promise<Usuario> => {
-    try {
-        const response = await api.post(`/usuarios/login`, usuarioLogin);
-        return response.data as Usuario; 
-    } catch (error) {
-        if (error instanceof Error) {
-            throw new Error(`Error al iniciar sesión: ${error.message}`);
-        } else {
-            throw new Error(`Error al iniciar sesión: Error desconocido`);
-        }
-    }
+  try {
+      const response = await api.post(`/usuarios/login`, usuarioLogin);
+      return response.data as Usuario; 
+  } catch (error) {
+      if (error instanceof Error) {
+          throw new Error(`Error al iniciar sesión: ${error.message}`);
+      } else {
+          throw new Error(`Error al iniciar sesión: Error desconocido`);
+      }
   }
+}

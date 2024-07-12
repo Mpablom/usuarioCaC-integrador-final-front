@@ -1,4 +1,3 @@
-// App.tsx (o donde configures tus rutas)
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -6,8 +5,8 @@ import {
   Routes,
   Navigate,
 } from 'react-router-dom';
-import Login from './components/Login'; // Componente de inicio de sesión
-import UsuariosTable from './components/UsuariosTable'; // Componente de la tabla de usuarios
+import Login from './components/Login';
+import UsuariosTable from './components/UsuariosTable'; 
 
 const App: React.FC = () => {
   return (

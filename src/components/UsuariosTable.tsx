@@ -6,7 +6,6 @@ import BotonEliminar from "./BotonEliminar";
 import BotonRestaurar from "./BotonRestaurar";
 import CrearUsuario from "./CrearUsuario";
 import ActualizarUsuario from "./ActualizarUsuario";
-//import ActualizarUsuario from "./ActualizarUsuario";
 
 interface UsuariosTableProps {
   usuariosIniciales: Usuario[];
